@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {     /*variables */
+    --orange: #F2C14E;  
+    --winning-blocks: #2d414b;
+}
+
+body {
+    color: var(--orange);
+    font-family: 'Finger Paint', cursive;
+    
+}
+h1 {
+    font-size: 54px;
+    text-transform: uppercase;
+}
+
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #231b2d;
+  
+}
+
+
+.box {
+    height: 120px; 
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    font-size: 120px;
+   border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    box-shadow: 2px 2px 8px rgba(242, 193, 78, 0.5);
+    background-color: #231b2d;
+    transition: transform 200ms;
+    padding: 5px; 
+    margin: 5px; 
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 2px 8px rgba(242, 193, 78, 0.5);
+}
+
+#gameboard {
+    width: 400px;  
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+ 
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--orange);
+    color: #333;
+    border-color: var(--orange);
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600;
+}
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
